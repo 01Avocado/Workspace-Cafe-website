@@ -96,7 +96,7 @@ export default function HeroCanvasAnimation() {
     const section4Opacity = useTransform(smoothProgress, [0.9, 0.92, 0.98, 1], [0, 1, 1, 0]);
     const scrollIndicatorOpacity = useTransform(smoothProgress, [0, 0.1], [1, 0]);
     return (
-        <div ref={containerRef} className={`relative h-[500vh] ${!imagesLoaded ? 'overflow-hidden max-h-screen' : ''}`}>
+        <div ref={containerRef} className={`relative h-[400vh] md:h-[500vh] ${!imagesLoaded ? 'overflow-hidden max-h-screen' : ''}`}>
             {!imagesLoaded && (
                 <div className="fixed inset-0 bg-[#1A0F0A] flex flex-col items-center justify-center z-50">
                     <div className="w-64 h-2 bg-amber-900/30 rounded-full overflow-hidden mb-4">
@@ -127,44 +127,44 @@ export default function HeroCanvasAnimation() {
                         className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
                     >
                         <div className="flex flex-col items-center justify-center text-center px-4">
-                            <p className="text-[#E8D8C7] font-['Inter'] tracking-[0.2em] font-medium text-sm md:text-md mb-2 opacity-80 uppercase">
-                                EST. 2026X
+                            <p className="text-[#E8D8C7] font-['Inter'] tracking-[0.2em] font-medium text-xs md:text-md mb-2 opacity-80 uppercase">
+                                EST. 2024
                             </p>
-                            <h1 className="flex flex-col items-center leading-none mb-6">
-                                <span className="text-7xl md:text-[120px] font-['Playfair_Display'] font-bold text-[#E8D8C7] tracking-[-2px]">
+                            <h1 className="flex flex-col items-center leading-none mb-4 md:mb-6">
+                                <span className="text-5xl sm:text-7xl md:text-[120px] font-['Playfair_Display'] font-bold text-[#E8D8C7] tracking-[-1px] md:tracking-[-2px]">
                                     Experience
                                 </span>
-                                <span className="text-6xl md:text-[90px] font-['Playfair_Display'] font-normal italic text-[#E8D8C7]">
+                                <span className="text-4xl sm:text-6xl md:text-[90px] font-['Playfair_Display'] font-normal italic text-[#E8D8C7]">
                                     Coffee
                                 </span>
                             </h1>
-                            <p className="text-lg md:text-2xl text-[#E8D8C7]/80 font-['Inter'] max-w-lg">
+                            <p className="text-base md:text-2xl text-[#E8D8C7]/80 font-['Inter'] max-w-[280px] sm:max-w-lg">
                                 Where every sip defies gravity
                             </p>
                         </div>
                     </motion.div>
                     <motion.div
                         style={{ opacity: section2Opacity }}
-                        className="absolute inset-0 flex flex-col justify-center items-start text-left px-8 md:px-16"
+                        className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-8 md:px-16"
                     >
                         <div className="max-w-2xl">
-                            <h2 className="text-5xl md:text-7xl font-['Playfair_Display'] font-semibold text-amber-50 mb-3">
+                            <h2 className="text-4xl md:text-7xl font-['Playfair_Display'] font-semibold text-amber-50 mb-3">
                                 Crafted to Perfection
                             </h2>
-                            <p className="text-lg md:text-xl text-amber-100/70 font-['Inter']">
+                            <p className="text-base md:text-xl text-amber-100/70 font-['Inter']">
                                 From bean to cup, excellence floats in every drop
                             </p>
                         </div>
                     </motion.div>
                     <motion.div
                         style={{ opacity: section3Opacity }}
-                        className="absolute inset-0 flex flex-col justify-center items-end text-right px-8 md:px-16"
+                        className="absolute inset-0 flex flex-col justify-center items-center md:items-end text-center md:text-right px-8 md:px-16"
                     >
                         <div className="max-w-2xl">
-                            <h2 className="text-5xl md:text-7xl font-['Playfair_Display'] font-semibold text-amber-50 mb-3">
+                            <h2 className="text-4xl md:text-7xl font-['Playfair_Display'] font-semibold text-amber-50 mb-3">
                                 Anti-Gravity Flavor
                             </h2>
-                            <p className="text-lg md:text-xl text-amber-100/70 font-['Inter']">
+                            <p className="text-base md:text-xl text-amber-100/70 font-['Inter']">
                                 Defying expectations, elevating taste beyond limits
                             </p>
                         </div>
@@ -173,7 +173,7 @@ export default function HeroCanvasAnimation() {
                         style={{ opacity: section4Opacity }}
                         className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
                     >
-                        <h2 className="text-6xl md:text-8xl font-['Playfair_Display'] font-bold text-amber-50 mb-6">
+                        <h2 className="text-5xl md:text-8xl font-['Playfair_Display'] font-bold text-amber-50 mb-6 px-4">
                             Discover Your Blend
                         </h2>
                         <motion.button

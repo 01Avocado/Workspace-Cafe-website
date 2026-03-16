@@ -13,7 +13,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="bg-[#3D2820]/80 backdrop-blur-sm rounded-2xl p-7 border border-[#5A4034] hover:border-[#4F9C8F] transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#4F9C8F]/20"
+            className="bg-[#3D2820]/80 backdrop-blur-sm rounded-2xl p-5 md:p-7 border border-[#5A4034] hover:border-[#4F9C8F] transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#4F9C8F]/20"
         >
             {/* Star Rating */}
             <div className="flex items-center gap-2 mb-4">
@@ -21,7 +21,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
                 <span className="text-[#F5E6D3] font-semibold text-sm">{product.rating}</span>
             </div>
             {/* Coffee Image */}
-            <div className="w-full h-96 bg-[#2D1810] rounded-xl mb-5 overflow-hidden">
+            <div className="w-full h-64 md:h-96 bg-[#2D1810] rounded-xl mb-5 overflow-hidden">
                 <img
                     src={product.image}
                     alt={product.name}

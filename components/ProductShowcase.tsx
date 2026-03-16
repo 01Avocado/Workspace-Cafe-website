@@ -10,7 +10,7 @@ export default function ProductShowcase() {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="relative h-64 mb-16 rounded-3xl overflow-hidden"
+                className="relative h-48 md:h-64 mb-16 rounded-3xl overflow-hidden"
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3D2418] via-[#4D3428] to-[#3D2418]" />
                 <img
