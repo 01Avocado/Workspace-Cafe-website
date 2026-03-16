@@ -128,7 +128,7 @@ export default function HeroCanvasAnimation() {
                     >
                         <div className="flex flex-col items-center justify-center text-center px-4">
                             <p className="text-[#E8D8C7] font-['Inter'] tracking-[0.2em] font-medium text-sm md:text-md mb-2 opacity-80 uppercase">
-                                EST. 2026X
+                                EST. 2026
                             </p>
                             <h1 className="flex flex-col items-center leading-none mb-6">
                                 <span className="text-7xl md:text-[120px] font-['Playfair_Display'] font-bold text-[#E8D8C7] tracking-[-2px]">
