@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 title: 'La Siesta | Experience Excellence',
 description: 'Premium coffee experiences crafted to perfection',
 icons: {
-    icon: '/app/favicon.ico',
+    icon: '/coffee/image.png',
     }
 };
 export default function RootLayout({
