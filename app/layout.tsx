@@ -10,7 +10,7 @@ subsets: ['latin'],
 variable: '--font-playfair'
 });
 export const metadata: Metadata = {
-title: 'Artisan Coffee | Experience Excellence',
+title: 'La Siesta | Experience Excellence',
 description: 'Premium coffee experiences crafted to perfection',
 };
 export default function RootLayout({
