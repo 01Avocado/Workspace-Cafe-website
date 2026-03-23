@@ -12,6 +12,8 @@ variable: '--font-playfair'
 export const metadata: Metadata = {
 title: 'La Siesta | Experience Excellence',
 description: 'Premium coffee experiences crafted to perfection',
+icons: {
+    icon: '/app/favicon.ico',
 };
 export default function RootLayout({
 
